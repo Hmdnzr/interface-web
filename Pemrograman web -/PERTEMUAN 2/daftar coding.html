@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran</title>
+</head>
+
+<body>
+    <form>
+        <table>
+            <tr>
+                <td>Nama:</td>
+                <td><input type="text" id="nama" name="nama" required placeholder="Nama Panggilan"></td>
+            </tr>
+            <tr>
+                <td>No Telp:</td>
+                <td><input type="text" id="phone" name="phone" pattern="[0-9]{12}"></td>
+            </tr>
+
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" id="email" name="email"></td>
+            </tr>
+
+            <tr>
+                <td>Password: </td>
+                <td><input type="password" id="password" name="password" required
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{5,}"></td>
+            </tr>
+            <tr>
+                <td>Tanggal Lahir: </td>
+                <td><input type="date" id="nama" name="nama"></td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin:</td>
+                <td>
+                    <input type="radio" id="cowok" name="kelamin" value="1">
+                    <label for="cowok">Laki-laki</label>
+                    <input type="radio" id="cewek" name="kelamin" value="2">
+                    <label for="cewek">Perempuan</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Les yang ingin diikuti</td>
+                <td>
+                    <input type="checkbox" id="html" name="html" value="html">
+                    <label for="html"> HTML</label>
+                    <input type="checkbox" id="css" name="css" value="css">
+                    <label for="css"> CSS</label>
+                    <input type="checkbox" id="js" name="js" value="js">
+                    <label for="javascript"> Javascript</label>
+                    <input type="checkbox" id="php" name="php" value="php">
+                    <label for="php"> PHP</label>
+                </td>
+            </tr>
+            <tr>
+                <td> Tingkat Pendidikan</td>
+                <td>
+                    <select name="pendidikan" id="pendidikan">
+                        <option value="SD"> SD </option>
+                        <option value="SMP"> SMP </option>
+                        <option value="SMA"> SMA </option>
+                        <option value="Kuliah"> Kuliah </option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Upload CV </td>
+                <td>
+                    <input type="file">
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">Komentar & Saran</td>
+                <td>
+                    <textarea id="komentar" name="komentar" rows="4" cols="50"></textarea>
+                </td>
+            </tr>
+        </table>
+
+        <input type="submit" value="kirim">
+    </form>
+</body>
+
+</html>
