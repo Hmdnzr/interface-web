@@ -1,0 +1,76 @@
+#header {
+    background-color: darkgreen;
+    text-align: center;
+    color: whitesmoke;
+    font-family: sans-serif;
+    font-size: 24px;
+    padding: 4px;
+}
+
+#nav {
+    background-color: rgb(179, 168, 200);
+    opacity: 0.8;
+    padding: 8px;
+    text-align: center;
+    border-style:double;
+    border-width: 8px;
+    color: deepskyblue;
+    
+    
+}
+
+#utama {
+    background-image: url("BGA.png");
+    background-color: green;
+    padding: 8px;
+}
+
+#article {
+    font-family: 'Courier New';
+    font-size: 20px;
+    color: white;
+    padding: 8px 20px;
+    margin: 24px -20px;
+    box-shadow: none!important;
+}
+
+#web {
+    width: 1800px;
+    height: 250px;
+    background-color: white;
+    color: black;
+    overflow: scroll;
+}
+#metnum {
+    width: 1800px;
+    height: 250px;
+    background-color: white;
+    color: black;
+    overflow: scroll;
+}
+
+#galeri {
+    text-align: center;
+}
+
+#footer {
+    background-color: red;
+    text-align: center;
+    color: silver;
+    font-family: arial;
+    font-size: 40px;
+}
+
+.pilihan {
+    font-color:white;
+    font-size: 32px;
+    line-height: 0;
+}
+
+.konten-item {
+    width: 1800px;
+    height: 250px;
+    background-color: white;
+    color: black;
+    overflow: scroll;
+}
