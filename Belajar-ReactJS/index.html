@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link CDN React -->
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <!-- Link CDN bootstrap 5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <title>react javascript </title>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-6 p-5">
+
+            <!-- <button class="btn btn-primary" > primary button</button>
+        <div class="card"></div>
+            <div class="card-body"></div>
+            <h5 class="card-title">hallo aku card</h5>
+            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, exercitationem.</p>
+            <a href="#" class="btn btn-primary"> lets go</a> -->
+
+            <div id="app"></div>
+        </div>
+    </div>
+
+
+    <script type="text/babel">
+        class Button extends React.Component {
+            render() {
+                const btn = React.createElement('button', {class : 'btn btn-primary'}, 'primary button')
+                return btn
+            }
+        }
+
+        class Cards extends React.Component {
+            render() {
+                    const link = React.createElement('a', {href : '#', class : 'btn btn-primary '}, 'lets go again')
+                    const cardtext = React.createElement('p', {class : 'card-text'}, 'Lorem ipsum dolor sit amet consectur adiciping elit ')
+                    const cardtitle = React.createElement('h5', {class : 'card-title'}, 'ini adalah card ')
+                    const cardbody = React.createElement('div', {class : 'card-body p-5'}, cardtext, cardtitle, link)
+                    const card = React.createElement('div', {class : 'card'}, cardbody)
+                    return card
+            }
+        }
+        class Buttonjsx extends React.Component {
+            render(){
+                return <button classname = {'btn btn-primary'}> primary button </button>
+            }
+        }
+        ReactDOM.render(<Cards/>, document.getElementById('app'));
+     </script>
+
+    <!-- Link CDN javascript bundle with proper-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>
