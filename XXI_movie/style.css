@@ -1,0 +1,7 @@
+.konten-item {
+    width: 1800px;
+    height: 250px;
+    background-color: white;
+    color: black;
+    overflow: scroll;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.css">
+    <script src="script.js"></script>
+
+    <title>Registrasi tiket</title>
+</head>
+<body class="row">
+    <h3 align="center">List Harga</h3>
+    <table class="table table-hover container-fluid">
+        <tr align="left" bgcolor="yellow"><td >Item</td><td>Harga</td></tr>
+        <tr><td align="left">Tiket/Orang</td><td>Rp 35.0000,00</td></tr>
+        <tr><td align="left">Popcorn</td><td>Rp 10.0000,00</td></tr>
+        <tr><td align="left">XIX Bread</td><td>Rp 10.0000,00</td></tr>
+        <tr><td align="left">XIX Softdrink</td><td>Rp 5.0000,00</td></tr>
+        <tr><td align="left">XIX Coldtea</td><td>Rp 5.0000,00</td></tr>
+    </table>
+
+    <div>
+        <h3 class="title" align="center">Registrasi Tiket</h3>
+        <div>
+            <form>
+                <table>
+                    <tr>
+                        <td><p>Nama:</p></td>
+                        <td><input type="text" id="nama" name="nama" required placeholder="Nama Lengkap" class="form-control-sm" style="width: 390px;"></td>
+                    </tr>
+                    <tr>
+                        <td><p>Nomor Handphone:</p></td>
+                        <td><input type="text" id="phone" name="phone" pattern="[0-9]{12}" class="form-control-sm" style="width: 390px;" required></td>
+                    </tr>
+                    <tr>
+                        <td><p>Jumlah Tiket yang dipesan:</p></td>
+                        <td><input type="text" id="jmlhTiket" style="width:40px" pattern="(?=.*[1-9].{,1})" required/></td>
+                    </tr>
+                    <tr>
+                        <td><p>Tanggal Nonton:</p></td>
+                        <td><input type="date" id="tgl" name="tgl"></td>
+                    </tr>
+                    <tr>
+                        <td><p>Jenis Kelamin:</p></td>
+                        <td><input type="radio" id="cowok" name="kelamin" value="1" class="form-check-input">
+                            <label for="cowok" class="form-check-label"><p>Laki-laki</p></label>
+                            <input type="radio" id="cewek" name="kelamin" value="2" class="form-check-input">
+                            <label for="cewek" class="form-check-label"><p>Perempuan</p></label>
+                        </td>
+                    </tr>
+                    <tr><td><p>Pesan Makanan apa saja?:</p></td>
+                        <td><input type="checkbox" id="pop" name="pop" value="pop" class="form-check-input">
+                            <label for="Pop" class="form-check-label"><p>Popcorn</p></label>
+                            <input type="checkbox" id="Bread" name="Bread" value="Bread" class="form-check-input">
+                            <label for="Bread" class="form-check-label"><p>XIX Bread</p></label>
+                            <input type="checkbox" id="drink" name="drink" value="drink" class="form-check-input">
+                            <label for="drink" class="form-check-label"><p>XIX Softdrink</p></label>
+                            <input type="checkbox" id="Teh" name="Teh" value="Teh" class="form-check-input">
+                            <label for="Teh" class="form-check-label"><p>XIX Cold Tea</p></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><p>Film yang ingin ditonton:</p></td>
+                        <td><select name="judul" id="judul" style="width: 200px;" class="form-select">
+                            <option value="Kyai">Sang Kyai</option>
+                            <option value="Guru">Guru Bangsa Tjokroaminoto</option>
+                            <option value="Lion">Lion of The Deser</option>
+                            <option value="Empires">Battle of Empires, Fetih 1453</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><p>Jadwal tonton:</p></td>
+                        <td><select name="jadwal" id="jadwal" style="width: 200px;" class="form-select">
+                            <option value="Pagi">Pagi</option>
+                            <option value="Siang">Siang</option>
+                            <option value="Malam">Malam</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="center"><p>Kritik dan Saran:</p></td>
+                        <td><textarea id="kritik" name="kritik" rows="4" cols="50"></textarea></td>
+                    </tr>
+                </table>
+                <div class="row"></div>
+                    <div class="col-7"></div>
+                    <div class="col-1">
+                        <button type="button" style="width: 150px; margin-left: 18x; margin-top: 10px;" onclick="hitung();">Hitung</button><br>
+                    </div>
+                    <div class="col-4"></div>
+                <p id="Bayar">Uang yang harus anda bayarkan:</p>
+                <div>
+                    <input type="submit" value="Kirim" class="btn btn-success btn-lg" style="width: 150px; margin-left: 18x;">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
