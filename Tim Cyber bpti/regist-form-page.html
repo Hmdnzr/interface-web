@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" href="Asset/media/Logo-UHAMKA-Hanya-Logo-Utama.png" type="#">
+
+
+    <title> Form Pendaftaran Tim Cyber
+    </title>
+
+</head>
+
+<body>
+    <div class="container-fluid row header-center bg-dark" style="width: auto;">
+
+
+        <div class="col-sm-12 border-5 p-10">
+            <h4 class="text-center text-light" style="font-weight: normal; text-align: left; font-family: serif; ">
+                PENDAFTARAN ANGGOTA Tim Cyber uhamka</h4>
+        </div>
+        <div class="col-sm-12 header-center">
+            <div class="">.</div>
+            <br><br><br>
+        </div>
+        <div class="container"></div>
+        <form class="row">
+            <table class="bg-warning">
+                <tr>
+                    <td>Nama</td>
+                    <td><input type="text controls" id="nama" name="nama" required placeholder="Masukkan nama anda"
+                            class="form-control form-control-sm"></td>
+                </tr>
+
+                <tr>
+                    <td>NIM</td>
+                    <td><input type="text" id="nim" name="nim" required placeholder="20023xxxxx"
+                            class="form-control form-control-sm"></td>
+                </tr>
+
+                <tr>
+                    <td>Nomor Telepon</td>
+                    <td><input type="text" id="phone" name="phone" pattern="[0-9]{12}" required placeholder="08xxxxxxx"
+                            class="form-control form-control-sm"></td>
+                </tr>
+
+                <tr>
+                    <td>Email</td>
+                    <td><input type="email" id="email" name="email" required placeholder="xxxxxxxx@gmail.com"
+                            class="form-control form-control-sm"></td>
+                </tr>
+
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" id="password" name="password"
+                            pattern="(?=(?:[^a-zA-Z]*[a-zA-Z]){4})(?=(?:\D*\d){3}).{7,}" required
+                            placeholder="3 nomor dan 4 huruf" class="form-control form-control-sm"></td>
+                </tr>
+
+                <tr>
+                    <td>Tanggal Lahir</td>
+                    <td><input type="date" id="date" name="date" class="form-control form-control-sm"></td>
+                </tr>
+
+                <tr>
+                    <td>Jenis Kelamin</td>
+                    <td>
+                        <input type="radio" id="laki" name="Kelamin" value="1" class="form-check-input">
+                        <label for="laki" class="form-check-label">Laki-laki</label>
+                        <input type="radio" id="perempuan" name="Kelamin" value="2" class="form-check-input">
+                        <label for="perempuan" class="form-check-label">perempuan</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Fakultas</td>
+                    <td>
+                        <select name="pendidikan" id="pendidikan" class="form-select">
+                            <option value="FAI">Fakultas Agama Islam (FAI)</option>
+                            <option value="FFS">Fakultas Farmasi dan Sains (FFS)</option>
+                            <option value="FEB">Fakultas Ekonomi dan Bisnis (FEB)</option>
+                            <option value="FP">Fakultas Psikologi (FP)</option>
+                            <option value="FT">Fakultas Teknik (FT)</option>
+                            <option value="FKIP">Fakultas Keguruan dan Ilmu Pendidikan (FKIP)</option>
+                            <option value="FISIP">Fakultas Ilmu Sosial dan Ilmu Politik (FISIP)</option>
+                            <option value="FK">Fakultas Kedokteran (FK)</option>
+                            <option value="FIK">Fakultas Ilmu-ilmu Kesehatan (FIK)</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Upload Kartu Tanda Mahasiswa</td>
+                    <td><input type="file"></td>
+                </tr>
+
+
+
+            </table>
+            <br><br>
+        </form>
+        <br>
+        <a class="p-3" href="index.html"><input type="submit" value="submit" class="btn btn-success btn-lg float-end"
+            style="width:100px; font-family: serif;"></a>
+    </div>
+
+
+
+    <script src="script.js"></script>
+    <script src="bootstrap-5.1.3-dist/js/bootstrap.js"></script>
+
+</body>
+
+</html>
