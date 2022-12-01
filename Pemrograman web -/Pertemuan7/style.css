@@ -1,0 +1,13 @@
+.scroll{
+    display:block;
+    padding:5px;
+    margin-top:5px;
+    width:300px;
+    height:300px;
+    overflow:scroll;
+}
+
+#isi {
+    font-family: sans-serif;
+    color: beige;
+}

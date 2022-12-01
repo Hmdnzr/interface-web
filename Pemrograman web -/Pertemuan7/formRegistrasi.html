@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.css">
+    <script src="fungsihitung.js"></script>
+    <title>Registrasi Tiket</title>
+</head>
+<body>
+    <p style="font-weight: bold; text-align: center; text-size:30px;">List Harga</p>
+    <table class="table table-striped">
+        <tr align="center" bgcolor="#ECE7B4"><td>Item</td>   <td>Harga</td></tr>
+        <tr align="center"><td>Tiket/Orang</td>      <td>Rp. 35.000,00</td>     </tr>
+        <tr align="center"><td>Popcorn</td>          <td>Rp. 10.000,00</td>     </tr>
+        <tr align="center"><td>XIX Bread</td>        <td>Rp. 10.000,00</td>     </tr>
+        <tr align="center"><td>XIX Softdrink</td>    <td>Rp. 5.000,00</td>     </tr>
+        <tr align="center"><td>XIX Coldtea</td>      <td>Rp. 5.000,00</td>     </tr>
+    </table>
+
+    <p style="font-weight: bold; text-align: center; text-size:30px;">Registrasi Tiket</p>
+    <form style="padding-left: 30px;">
+        <table>
+            <tr>
+                <td>Nama :</td><td><input type="text" id="nama" name="nama" required placeholder="Nama Panggilan" class="form-control"></td>
+            </tr>
+            <tr>
+                <td>Nomor Handphone :</td><td><input type="text" id="phone" name="phone" pattern="[0-9]{12}" class="form-control"></td>
+            </tr>
+            <tr>
+                <td>Jumlah Tiket :</td><td><input type="number" id="jumlahtiket" name="jumlahtiket" min="1" max="9" class="form-control"></td>
+            </tr>
+            <tr>
+                <td>Tanggal Nonton :</td><td><input type="date" id="nama" name="nama"></td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin :</td>
+                <td>
+                    <input type="radio" id="Laki-Laki" name="kelamin" value="1" class="form-check-input">
+                    <label for="Laki-Laki" class="form-check-label">Laki-Laki</label>
+                    <input type="radio" id="Perempuan" name="kelamin" value="2" class="form-check-input">
+                    <label for="Perempuan" class="form-check-label">Perempuan</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Makanan yang Dipesan : </td>
+                <td>
+                    <input type="checkbox" name="Popcorn" id="makanan1" value="10000" class="form-check-input">
+                    <label for="Popcorn" class="form-check-label">Popcorn</label>
+                    <input type="checkbox" name="XIX Bread" id="makanan2" value="10000" class="form-check-input">
+                    <label for="XIXBread" class="form-check-label">XIX Bread</label>
+                    <input type="checkbox" name="XIX Softdrink" id="makanan3" value="5000" class="form-check-input">
+                    <label for="XIXSoftdrink" class="form-check-label">XIX Softdrink</label>
+                    <input type="checkbox" name="XIX Coldtea" id="makanan4" value="5000" class="form-check-input">
+                    <label for="XIXColdtea" class="form-check-label">XIX Coldtea</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Film yang Ditonton :</td>
+                <td>
+                    <select name="namafilm" id="namafilm" style="width: 100px;" class="form-select form-select-sm">
+                        <option value="film1">Sang Kyai</option>
+                        <option value="film2">Guru Bangsa Tjokroaminoto</option>
+                        <option value="film3">Lion of The Desert</option>
+                        <option value="film4">Battle of Empires, Fetih 1453</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Jadwal Nonton :</td>
+                <td>
+                    <select name="namafilm" id="namafilm" style="width: 100px;" class="form-select form-select-sm">
+                        <option value="Pagi">Pagi</option>
+                        <option value="Siang">Siang</option>
+                        <option value="Sore">Sore</option>
+                        <option value="Malam">Malam</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top"> Kritik dan Saran : </td>
+                <td><textarea name="komentar" id="komentar" cols="50" rows="4"></textarea></td>
+            </tr>
+        </table>
+        
+        <button type="button" class="btn btn-secondary" style="margin-left:400px; width:150px; font-size:15px;" onclick="hitung();">Hitung</button>
+        <p>Uang yang harus anda bayarkan : </p>
+        <p id="total"></p>
+
+        <input type="submit" value="Kirim" class="btn btn-success" style="width: 150px; margin-left: 400px;">
+    </form>
+</body>
+</html>
